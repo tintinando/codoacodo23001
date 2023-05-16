@@ -109,6 +109,26 @@ nav .fa-solid {
 
 /*FIN NAV*/
 
+.contact-wp{
+    position: fixed;
+    bottom: 5rem;
+    right: 4rem;
+    animation: rotate-wp 5s infinite;
+}
+
+@keyframes rotate-wp{
+    90%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(1turn);
+    }
+}
+
+.contact-wp img{
+    width: 3rem;
+}
+
 main {
     background-color: black;
 }
