@@ -8,6 +8,11 @@ body {
     max-width: 1400px;
     min-width: 360px;
     margin: auto;
+    color: #CCC;
+}
+
+article{
+    padding: 3rem;
 }
 
 .logo1 {
@@ -112,7 +117,7 @@ nav .fa-solid {
 .contact-wp{
     position: fixed;
     bottom: 5rem;
-    right: 4rem;
+    right: 2.5rem;
     animation: rotate-wp 5s infinite;
 }
 
