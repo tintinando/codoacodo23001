@@ -1,6 +1,8 @@
 article{
     display: flex;
+    margin: 1rem;
     gap: 1rem;
+    color: #bbb;
 }
 
 
