@@ -112,6 +112,35 @@ nav .fa-solid {
     color: #FFF;
 }
 
+.icon-whatsapp {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    animation: roll 4s infinite;
+}
+
+.icon-whatsapp img {
+    width: 50px;
+}
+
+.icon-whatsapp img:hover{
+    transform: scale(1.15);
+}
+
+@keyframes roll {
+    0% {
+        transform: rotate(0turn);
+    }
+
+    80%{
+        transform: rotate(0turn);
+    }
+
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
 /*FIN NAV*/
 
 main {
@@ -573,7 +602,6 @@ footer {
         border-radius: 0 15px 15px 0;
         padding: 7px 60px;
     }
-
 
     #check:checked~ul {
         left: 0;
