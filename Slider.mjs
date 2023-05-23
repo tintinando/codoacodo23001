@@ -1,5 +1,6 @@
 class Slider {
-    constructor(sliderElement) {
+    constructor(sliderElement, options={}) {
+        const {timeTransition = 350, interval = 4000, directionInverse = false} = options;
         // DOM
         this.sliderElement = sliderElement;
         this.slider = sliderElement.querySelector(".slider");
@@ -7,9 +8,11 @@ class Slider {
         this.sliderSectionLast = this.sliderSection[this.sliderSection.length - 1];
         this.btnLeft = sliderElement.querySelector(".slider-btn-left");
         this.btnRight = sliderElement.querySelector(".slider-btn-right");
-        this.timeTransition = 350;
+        this.timeTransition = timeTransition;
         this.touchStartX = 0;
         this.touchEndX = 0;
+        this.interval = interval;
+        this.directionInverse = directionInverse;
 
 
         // mueve la última foto al comienzo para poder ir a la izquierda desde el principio
@@ -27,8 +30,8 @@ class Slider {
 
         // desplazamiento automático
         this.autoNextInterval = setInterval(() => {
-            this.nextPhoto();
-        }, 4000)
+            this.directionInverse ? this.prevPhoto() : this.nextPhoto();
+        }, this.interval)
     }
 
     nextPhoto() {
