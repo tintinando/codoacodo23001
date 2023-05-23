@@ -10,7 +10,7 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/vnd.icon" href="img/favicon.ico">
     <title>Rent a Home. Alquiler temporario</title>
 </head>
@@ -47,47 +47,58 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="well well-sm">
-                        <form class="form-horizontal" method="post">
+                        <form id="reservas" class="form-horizontal" method="post">
                             <fieldset>
                                 <legend class="text-center header">Contact us</legend>
-        
+
                                 <div class="form-group">
-                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i
+                                            class="fa fa-user bigicon"></i></span>
                                     <div class="col-md-8">
-                                        <input id="fname" name="name" type="text" placeholder="First Name" class="form-control">
+                                        <input id="fname" name="name" type="text" placeholder="Nombre"
+                                        autocomplete="given-name" class="form-control">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i
+                                            class="fa fa-user bigicon"></i></span>
                                     <div class="col-md-8">
-                                        <input id="lname" name="name" type="text" placeholder="Last Name" class="form-control">
+                                        <input id="lname" name="name" type="text" placeholder="Apellido"
+                                        autocomplete="family-name" class="form-control">
                                     </div>
                                 </div>
-        
+
                                 <div class="form-group">
-                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i
+                                            class="fa fa-envelope-o bigicon"></i></span>
                                     <div class="col-md-8">
-                                        <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
+                                        <input id="email" name="email" type="text" placeholder="Correo Electrónico"
+                                        autocomplete="email" class="form-control">
                                     </div>
                                 </div>
-        
+
                                 <div class="form-group">
-                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i
+                                            class="fa fa-phone-square bigicon"></i></span>
                                     <div class="col-md-8">
-                                        <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control">
+                                        <input id="phone" name="phone" type="text" placeholder="Teléfono"
+                                        autocomplete="tel" class="form-control">
                                     </div>
                                 </div>
-        
+
                                 <div class="form-group">
-                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i
+                                            class="fa fa-pencil-square-o bigicon"></i></span>
                                     <div class="col-md-8">
-                                        <textarea class="form-control" id="message" name="message" placeholder="Enter your massage for us here. We will get back to you within 2 business days." rows="7"></textarea>
+                                        <textarea class="form-control" id="message" name="message"
+                                            placeholder="Ingrese su mensaje. ¿Te gustó alguna cabaña? Te ayudamos a reservar"
+                                            rows="7"></textarea>
                                     </div>
                                 </div>
-        
+
                                 <div class="form-group">
                                     <div class="col-md-12 text-center">
-                                        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                                        <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
                                     </div>
                                 </div>
                             </fieldset>
@@ -98,7 +109,6 @@
         </div>
     </main>
 
-    
     <footer>
         <div class="socialMedia">
             <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
@@ -111,5 +121,7 @@
             <p>Copyright &copy;2023; Diseñado por <span> Grupo G.</span> </p>
         </div>
     </footer>
+    <script src="/reservas.js"></script>
 </body>
+
 </html>
