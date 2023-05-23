@@ -118,7 +118,129 @@ main {
     width: 100%;
     height: 300px;
 }
+
 /*main*/
+h1 {
+	color: #fff;
+	text-align: center;
+}
+
+/*Estilos de la galeria*/
+
+.card3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin: auto;
+}
+.card3 img{
+    width: 100%;
+    margin: auto;
+    width: 350px;
+	
+}
+.card3 a {
+    margin: auto;
+}
+.imgA{
+    margin: auto;
+
+}
+
+
+article{
+    margin-bottom: 3px;
+}
+
+/*Estilos del modal*/
+
+.modal {
+	display: none;
+}
+
+.modal:target {
+	
+	display: block;
+	position: fixed;
+	background: rgba(0,0,0,0.8);
+	top: 70px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.modal h3 {
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+	margin: 15px 0;
+}
+
+.imagen {
+	width: 100%;
+	height: 50%;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    margin-top: 87px;
+}
+
+.imagen a {
+	color: #fff;
+	font-size: 40px;
+	text-decoration: none;
+	margin: 0 10px;
+}
+
+.imagen a:nth-child(2) {
+	margin: 0;
+	height: 100%;
+	flex-shrink: 2;
+}
+
+.imagen img {
+	width:100%;
+	height: 100%;
+	max-width: 500px;
+	border: 7px solid #fff;
+	box-sizing: border-box;
+    }
+
+.cerrar {
+	display: block;
+	background: orange;
+	width: 25px;
+	height: 25px;
+	margin: 15px auto;
+	text-align: center;
+	text-decoration: none;
+	font-size: 25px;
+	color: #FFF;
+	border-radius: 50%;
+	line-height: 25px;
+}
+.aside1{
+    background-color: lightgrey;
+    border-radius: 3px;
+    width: 90%;
+    height: auto;
+    margin: 3% auto;
+    padding: 5px;
+}
+.aside1 a {
+    color: black;
+    background-color: orange;
+    border-radius: 3px;
+    text-decoration: none;
+    }
+.mapa{
+    width: 350px;
+    height: 265px;
+    margin-bottom: 15px;
+}    
 
 .contenedor {
     background-color: lightgrey;
@@ -232,7 +354,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
     color: black;
     }
 
-
 /* ------footer----- */
 footer {
     background-color: rgb(34, 34, 34);
@@ -299,6 +420,29 @@ footer {
     .video1 {
         height: 400px;
     }
+
+
+    .card3 {
+        display: flex ;
+        flex-direction: row;
+        justify-content: space-around ;
+        align-items: center;
+      
+        
+    }
+    .imgA{
+        width: 44%;
+        margin: 20px;
+    }
+    .aside1{
+        width: 44%;
+        height: 300px;
+        margin: 20px;
+    }
+    .mapa{
+        width: 100%;
+        height: 290px;
+    }    
     .contenedor {
 		width: 90%;
         }
@@ -334,7 +478,29 @@ footer {
     .contenedor-cards .contenedor-card-item {
                     width: 50%;
                     margin: 5px auto;
-                  }                   
+                  }   
+.card3 {
+    display: flex ;
+    flex-direction: row;
+    justify-content: space-around ;
+    align-items: center;
+}
+    
+    
+.imgA{
+        width: 44%;
+        margin: 3%;
+    }
+.aside1{
+    width: 44%;
+    height: 300px;
+    margin: 3%;
+    font-size: 18px;
+}
+.mapa{
+    width: 100%;
+        height: 290px;
+}                                  
 
 }
 
